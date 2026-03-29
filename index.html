@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Chatbot - 5 Languages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        select,
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 2px solid #667eea;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #5568d3;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+            min-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌍 Multi-Language Chatbot</h1>
+
+        <label for="language">Выберите язык:</label>
+        <select id="language">
+            <option value="en">🇬🇧 English</option>
+            <option value="ru">🇷🇺 Русский</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="fr">🇫🇷 Français</option>
+        </select>
+
+        <button id="greetBtn">👋 Получить приветствие</button>
+
+        <div id="output"></div>
+    </div>
+
+    <!-- Подключение внешнего файла JavaScript -->
+    <script src="chatbot.js"></script>
+</body>
+
+</html>
